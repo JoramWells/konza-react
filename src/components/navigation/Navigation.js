@@ -1,13 +1,20 @@
+import { Menu } from 'antd'
+import {HomeOutlined, PictureOutlined, VideoCameraAddOutlined} from '@ant-design/icons'
 import React from 'react'
-import {Menu} from 'antd'
 
 export default function Navigation() {
     return (
-        <Menu>
+        <Menu mode="horizontal">
             <Menu.Item>
-                HomePage
+                <HomeOutlined style={{fontSize:"1.5rem", color:"grey"}} />
             </Menu.Item>
-            
+            <Menu.Item>
+                <PictureOutlined style={{fontSize:"1.5rem", color:"grey"}}/>
+            </Menu.Item>
+            <Menu.Item>
+            <VideoCameraAddOutlined style={{fontSize:"1.5rem", color:"grey"}} />
+            </Menu.Item>
         </Menu>
+
     )
 }
